@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(257, 40%, 49%); 
+     background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.logo{
+    width: 20%;
+    justify-self: flex-start;
+    margin: 4%;
+}
+
+.container{
+    width: 70em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.mockups{
+    width: 60%;
+}
+
+.message{
+    width: 37%;
+}
+
+.main-title{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.subtitle{
+    margin-bottom: 2em;
+}
+
+.register{
+    padding: 0.7em 3em;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 1.7em;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.562);
+}
+
+
+.social-icons{
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 13%  4%;
+}
+
+.icon{
+    width: 2em;
+    height: 2em;
+    margin-right: 0.8em;
+    text-align: center;
+    line-height: 1.8;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width:1024px){
+    .register:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .icon:hover{
+        border: 1px solid hsl(300, 69%, 71%);
+        color: hsl(300, 78%, 65%);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:480px){
+    body{
+        width: 100%;
+        flex-direction: column;
+        /* background-size: 100% 100%; */
+    }
+    
+    .logo{
+        width: 35%;
+        margin-bottom: 5em;
+    }
+
+    .container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mockups{
+        width: 70%;
+    }
+
+    .message{
+        width: 80%;
+    }
+
+    .main-title{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+    }
+
+    .subtitle{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .register{
+        padding: 0.7em 5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .social-icons{
+        align-self: center;
+    }
+
+}
